@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Analytics">
+		<CheckBoxPreference android:title="Enable Analytics"
+			android:defaultValue="true" android:summaryOn="Analytics ON"
+			android:summaryOff="Analytics OFF"
+			android:key="flurry" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Socialize">
+		<Preference android:title="Tell A Friend"
+		    android:summary="Brag about AppThrower"
+			android:key="share" />
+	</PreferenceCategory>
+</PreferenceScreen>

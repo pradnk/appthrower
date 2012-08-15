@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_layer_list">
+
+    <com.markupartist.android.widget.ActionBar
+		android:id="@+id/actionBar1" style="@style/ActionBar"></com.markupartist.android.widget.ActionBar>
+    
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:cacheColorHint="#00000000"
+    	android:layout_below="@+id/actionBar1"
+    	android:background="@drawable/bg_layer_list" />
+    
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@drawable/empty_message_bg"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:visibility="gone">
+        <TextView 
+            android:id="@+id/emptyText"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:text="No Images Yet!\n\nStart Clicking!"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:textSize="18sp"
+        	android:textStyle="bold"
+        	android:textColor="@color/empty_view_text" />
+    </LinearLayout>
+
+</RelativeLayout>
